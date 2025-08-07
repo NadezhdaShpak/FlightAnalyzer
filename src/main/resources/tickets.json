@@ -1,0 +1,92 @@
+[
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "Аэрофлот",
+    "flight_time_minutes": 600,
+    "price": 25000
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "S7 Airlines",
+    "flight_time_minutes": 630,
+    "price": 23000
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "Аэрофлот",
+    "flight_time_minutes": 720,
+    "price": 27000
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "EL AL",
+    "flight_time_minutes": 680,
+    "price": 35000
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "Аэрофлот",
+    "flight_time_minutes": 610,
+    "price": 24000
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "EL AL",
+    "flight_time_minutes": 700,
+    "price": 32000
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "S7 Airlines",
+    "flight_time_minutes": 640,
+    "price": 22000
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "S7 Airlines",
+    "flight_time_minutes": 710,
+    "price": 28000
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "Аэрофлот",
+    "flight_time_minutes": 615,
+    "price": 25500
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "EL AL",
+    "flight_time_minutes": 695,
+    "price": 31000
+  }
+]
