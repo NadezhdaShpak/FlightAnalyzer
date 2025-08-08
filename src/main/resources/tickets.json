@@ -1,101 +1,152 @@
-[
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "Аэрофлот",
-    "flight_time_minutes": 600,
-    "price": 25000
+{
+  "tickets": [{
+    "origin": "VVO",
+    "origin_name": "Владивосток",
+    "destination": "TLV",
+    "destination_name": "Тель-Авив",
+    "departure_date": "12.05.18",
+    "departure_time": "16:20",
+    "arrival_date": "12.05.18",
+    "arrival_time": "22:10",
+    "carrier": "TK",
+    "stops": 3,
+    "price": 12400
+  }, {
+    "origin": "VVO",
+    "origin_name": "Владивосток",
+    "destination": "TLV",
+    "destination_name": "Тель-Авив",
+    "departure_date": "12.05.18",
+    "departure_time": "17:20",
+    "arrival_date": "12.05.18",
+    "arrival_time": "23:50",
+    "carrier": "S7",
+    "stops": 1,
+    "price": 13100
+  }, {
+    "origin": "VVO",
+    "origin_name": "Владивосток",
+    "destination": "TLV",
+    "destination_name": "Тель-Авив",
+    "departure_date": "12.05.18",
+    "departure_time": "12:10",
+    "arrival_date": "12.05.18",
+    "arrival_time": "18:10",
+    "carrier": "SU",
+    "stops": 0,
+    "price": 15300
+  }, {
+    "origin": "VVO",
+    "origin_name": "Владивосток",
+    "destination": "TLV",
+    "destination_name": "Тель-Авив",
+    "departure_date": "12.05.18",
+    "departure_time": "17:00",
+    "arrival_date": "12.05.18",
+    "arrival_time": "23:30",
+    "carrier": "TK",
+    "stops": 2,
+    "price": 11000
+  }, {
+    "origin": "VVO",
+    "origin_name": "Владивосток",
+    "destination": "TLV",
+    "destination_name": "Тель-Авив",
+    "departure_date": "12.05.18",
+    "departure_time": "12:10",
+    "arrival_date": "12.05.18",
+    "arrival_time": "20:15",
+    "carrier": "BA",
+    "stops": 3,
+    "price": 13400
+  }, {
+    "origin": "VVO",
+    "origin_name": "Владивосток",
+    "destination": "TLV",
+    "destination_name": "Тель-Авив",
+    "departure_date": "12.05.18",
+    "departure_time": "9:40",
+    "arrival_date": "12.05.18",
+    "arrival_time": "19:25",
+    "carrier": "SU",
+    "stops": 3,
+    "price": 12450
+  }, {
+    "origin": "VVO",
+    "origin_name": "Владивосток",
+    "destination": "TLV",
+    "destination_name": "Тель-Авив",
+    "departure_date": "12.05.18",
+    "departure_time": "17:10",
+    "arrival_date": "12.05.18",
+    "arrival_time": "23:45",
+    "carrier": "TK",
+    "stops": 1,
+    "price": 13600
   },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "S7 Airlines",
-    "flight_time_minutes": 630,
-    "price": 23000
-  },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "Аэрофлот",
-    "flight_time_minutes": 720,
-    "price": 27000
-  },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "EL AL",
-    "flight_time_minutes": 680,
-    "price": 35000
-  },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "Аэрофлот",
-    "flight_time_minutes": 610,
-    "price": 24000
-  },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "EL AL",
-    "flight_time_minutes": 700,
-    "price": 32000
-  },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "S7 Airlines",
-    "flight_time_minutes": 640,
-    "price": 22000
-  },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "S7 Airlines",
-    "flight_time_minutes": 710,
-    "price": 28000
-  },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "Аэрофлот",
-    "flight_time_minutes": 615,
-    "price": 25500
-  },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "EL AL",
-    "flight_time_minutes": 695,
-    "price": 31000
-  },
-  {
-    "departure": "Владивосток",
-    "departure_airport": "VVO",
-    "arrival": "Тель-Авив",
-    "arrival_airport": "TLV",
-    "carrier": "EL AL",
-    "flight_time_minutes": 605,
-    "price": 33000
-  }
-]
+    {
+      "origin": "VVO",
+      "origin_name": "Владивосток",
+      "destination": "UFA",
+      "destination_name": "Уфа",
+      "departure_date": "12.05.18",
+      "departure_time": "15:15",
+      "arrival_date": "12.05.18",
+      "arrival_time": "17:45",
+      "carrier": "TK",
+      "stops": 1,
+      "price": 33400
+    },
+    {
+      "origin": "VVO",
+      "origin_name": "Владивосток",
+      "destination": "TLV",
+      "destination_name": "Тель-Авив",
+      "departure_date": "12.05.18",
+      "departure_time": "6:10",
+      "arrival_date": "12.05.18",
+      "arrival_time": "15:25",
+      "carrier": "TK",
+      "stops": 0,
+      "price": 14250
+    },
+    {
+      "origin": "LRN",
+      "origin_name": "Ларнака",
+      "destination": "TLV",
+      "destination_name": "Тель-Авив",
+      "departure_date": "12.05.18",
+      "departure_time": "12:50",
+      "arrival_date": "12.05.18",
+      "arrival_time": "14:30",
+      "carrier": "SU",
+      "stops": 1,
+      "price": 7000
+    },
+    {
+      "origin": "VVO",
+      "origin_name": "Владивосток",
+      "destination": "TLV",
+      "destination_name": "Тель-Авив",
+      "departure_date": "12.05.18",
+      "departure_time": "16:50",
+      "arrival_date": "12.05.18",
+      "arrival_time": "23:35",
+      "carrier": "SU",
+      "stops": 1,
+      "price": 16700
+    },
+    {
+      "origin": "VVO",
+      "origin_name": "Владивосток",
+      "destination": "TLV",
+      "destination_name": "Тель-Авив",
+      "departure_date": "12.05.18",
+      "departure_time": "6:10",
+      "arrival_date": "12.05.18",
+      "arrival_time": "16:15",
+      "carrier": "S7",
+      "stops": 0,
+      "price": 17400
+    }]
+}

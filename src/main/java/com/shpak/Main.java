@@ -7,10 +7,17 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class Main {
-    public static final String FILE_PATH = "src/main/resources/tickets.json";
+    private static final String FILE_PATH = "src/main/resources/tickets.json";
+    private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd.MM.yy");
+    private static final DateTimeFormatter TIME_FORMAT = DateTimeFormatter.ofPattern("H:mm");
     public Map<String, Integer> minFlightTime = new HashMap<>();
     public List<Integer> prices = new ArrayList<>();
 
@@ -34,7 +41,7 @@ public class Main {
         Collections.sort(prices);
         int size = prices.size();
         if (size % 2 == 0)
-            return (prices.get(size / 2 - 1) + prices.get(size / 2) )/ 2.0;
+            return (prices.get(size / 2 - 1) + prices.get(size / 2)) / 2.0;
         else return prices.get(size / 2);
     }
 
@@ -50,12 +57,13 @@ public class Main {
         JSONParser parser = new JSONParser();
         try {
             Object obj = parser.parse(new FileReader(FILE_PATH));
-            JSONArray tickets = (JSONArray) obj;
+            JSONObject jsonObject = (JSONObject) obj;
+            JSONArray tickets = (JSONArray) jsonObject.get("tickets");
 
             for (Object o : tickets) {
                 JSONObject ticket = (JSONObject) o;
-                String departure = (String) ticket.get("departure_airport");
-                String arrival = (String) ticket.get("arrival_airport");
+                String departure = (String) ticket.get("origin");
+                String arrival = (String) ticket.get("destination");
 
                 if ("VVO".equalsIgnoreCase(departure) && "TLV".equalsIgnoreCase(arrival)) {
                     filterByRoute(ticket);
@@ -67,14 +75,27 @@ public class Main {
     }
 
     private void filterByRoute(JSONObject ticket) {
-            String carrier = (String) ticket.get("carrier");
-            Object timeObj = ticket.get("flight_time_minutes");
-            Object priceObj = ticket.get("price");
+        String carrier = (String) ticket.get("carrier");
+        String departureDateStr = (String) ticket.get("departure_date");
+        String departureTimeStr = (String) ticket.get("departure_time");
+        String arrivalDateStr = (String) ticket.get("arrival_date");
+        String arrivalTimeStr = (String) ticket.get("arrival_time");
 
-            int flightTime = ((Long) timeObj).intValue();
-            int price = ((Long) priceObj).intValue();
+        LocalDateTime departureDateTime = getLocalDateTime(departureDateStr, departureTimeStr);
+        LocalDateTime arrivalDateTime = getLocalDateTime(arrivalDateStr, arrivalTimeStr);
 
-            minFlightTime.put(carrier, Math.min(minFlightTime.getOrDefault(carrier, Integer.MAX_VALUE), flightTime));
-            prices.add(price);
+        long flightTimeMinutes = Duration.between(departureDateTime, arrivalDateTime).toMinutes();
+
+        Object priceObj = ticket.get("price");
+        int price = ((Long) priceObj).intValue();
+
+        minFlightTime.put(carrier, (int)Math.min(minFlightTime.getOrDefault(carrier, Integer.MAX_VALUE), flightTimeMinutes));
+        prices.add(price);
+    }
+
+    private static LocalDateTime getLocalDateTime(String departureDateStr, String departureTimeStr) {
+        LocalDate departureDate = LocalDate.parse(departureDateStr, DATE_FORMAT);
+        LocalTime departureTime = LocalTime.parse(departureTimeStr, TIME_FORMAT);
+        return LocalDateTime.of(departureDate, departureTime);
     }
 }
