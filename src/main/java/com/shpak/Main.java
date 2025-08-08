@@ -35,15 +35,15 @@ public class Main {
         int size = prices.size();
         if (size % 2 == 0)
             return (prices.get(size / 2 - 1) + prices.get(size / 2) )/ 2.0;
-        else return prices.get(size / 2 - 1);
+        else return prices.get(size / 2);
     }
 
     private void printMap() {
-        System.out.println("=".repeat(25));
+        System.out.println("=".repeat(30));
         System.out.println("Минимальное время полета между\n" +
                 "городами Владивосток и Тель-Авив:");
         minFlightTime.forEach((key, value) -> System.out.println(key + " " + value));
-        System.out.println("=".repeat(25));
+        System.out.println("=".repeat(30));
     }
 
     private void readFile() {

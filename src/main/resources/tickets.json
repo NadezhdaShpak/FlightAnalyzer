@@ -88,5 +88,14 @@
     "carrier": "EL AL",
     "flight_time_minutes": 695,
     "price": 31000
+  },
+  {
+    "departure": "Владивосток",
+    "departure_airport": "VVO",
+    "arrival": "Тель-Авив",
+    "arrival_airport": "TLV",
+    "carrier": "EL AL",
+    "flight_time_minutes": 605,
+    "price": 33000
   }
 ]
